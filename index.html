@@ -680,6 +680,10 @@
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
             </li>
+
+            <!-- <li class="nav__item">
+              <a href="#Projects" class="nav__link active-link">Projects</a>
+            </li> -->
           </ul>
         </div>
         <div class="nav__menu" id="nav-menu">
@@ -823,18 +827,28 @@
       <section class="Contacts sss" id="contact">
         <h2 class="section-title"><u>Contact</u></h2>
         <div class="container">
-          <form action="#" class="contact-form" onsubmit="validateForm()">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-form"
+            onsubmit="validateForm() "
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="f16c8b87-8ac5-447f-9384-8f95f89ac729"
+            />
             <label for="name">Name:</label>
-            <input type="text" id="nameInput" />
+            <input name="Name" type="text" id="nameInput" />
 
             <label for="email">Email:</label>
-            <input type="email" id="emailInput" />
+            <input name="Email" type="email" id="emailInput" />
 
             <label for="number">Phone:</label>
-            <input type="number" id="numberInput" />
+            <input name="Number" type="number" id="numberInput" />
 
             <label for="message">Message:</label>
-            <textarea id="messageInput" rows="5"></textarea>
+            <textarea name="message_input" id="Message" rows="5"></textarea>
 
             <button type="submit">Send Message</button>
           </form>
@@ -857,8 +871,15 @@
     <footer>
       <div class="copyright">
         <p style="color: white">&copy; 2024 Nispal Bhattarai.</p>
-        <br />
-        <p style="color: white">Powered By :Zoner Tech Itahari</p>
+
+        <p style="color: white">
+          Powered By :Zoner Tech Itahari
+          <a
+            href="https://www.instagram.com/zonertech/"
+            class="home__social-icon"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </p>
       </div>
     </footer>
 
